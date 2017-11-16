@@ -38,7 +38,7 @@
                   Javascript
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#js01">Output met getElementById</a>
+                  <a class="dropdown-item" href="#js01">Output</a>
                   <a class="dropdown-item" href="#js02">Comments</a>
                   <a class="dropdown-item" href="#js03">String</a>
                 </div>
@@ -82,7 +82,7 @@
 
     <article class="container" id="js_tutorial">
       <section id="js01">
-        <h1>Output - getElement</h1>
+        <h1>Output</h1>
         <h4>Het plaatsen van tekst op het scherm</h4>     
         <div class="row">
           <div class="col-6">
@@ -113,9 +113,50 @@
           </div>
           <div class="col-6">
             <script>
-              
+              document.write("<p>Deze tekst is op het scherm gekomen met document.write</p>");
             </script>
           </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <p>Wanneer je document.write() aanroept nadat de pagina geladen is wordt alles overschreven</p>
+          </div>
+          <div class="col-6">
+              <button type="button" 
+                      class="btn btn-outline-danger"
+                      onclick="document.write('Deze tekst heeft alles gewist!');">Document.write()</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <p>Je kunt naar de console schrijven met console.log()</p>
+          </div>
+          <div class="col-6">
+              <button type="button" 
+                      class="btn btn-primary btn-lg"
+                      onclick="console.log('Deze tekst in met console.log() naar de console geschreven')">
+                      Schrijf naar console!</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            We gaan nu tekst veranderen van een p-tag op de pagina
+          </div>
+          <div class="col-4">
+            <p id="verander_tekst">Deze tekst wordt verandert nadat er op de knop hiernaast is gedrukt</p>
+          </div>
+          <div class="col-2">
+              <button type="button" 
+                      class="btn btn-outline-dark"
+                      onclick="verander_de_tekst();">Druk!</button>
+          </div>
+          <script>
+            function verander_de_tekst() {
+              //alert("Dit is een alert in een functie");
+              var p_tag = document.getElementById("verander_tekst");
+              p_tag.innerHTML = "Dit is de veranderde tekst. Hij is verandert door het drukken op de knop";
+            }          
+          </script>
         </div>
       </section>
       <section id="js02">
