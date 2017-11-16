@@ -3,7 +3,12 @@
   padding-right: 0px;
 }
 
-section {
+#js_tutorial section {
+  min-height: 100vh;
+  padding-top: 10vh;
+}
+
+section#home {
   min-height: 100vh;
   padding-top: 10vh;
 }
