@@ -134,7 +134,7 @@
           <div class="col-6">
               <button type="button" 
                       class="btn btn-primary btn-lg"
-                      onclick="console.log('Deze tekst in met console.log() naar de console geschreven')">
+                      onclick="console.log('Deze tekst is met console.log() naar de console geschreven')">
                       Schrijf naar console!</button>
           </div>
         </div>
@@ -164,9 +164,12 @@
           </div>
           <div class="col-3">
             <!-- Hier komt je input tag en knop -->
+              <input type="text" id="inputName" placeholder="Voer je naam in">
+              <button type="button" class="btn btn-outline-success" onmouseover="namePushButton()">Push!</button>
           </div>
           <div class="col-6">
             <!-- Hier komt je paragraaf tag -->
+            <p id="outputPara">Mijn naam is: </p>
           </div>
         </div>
       </section>
@@ -177,6 +180,20 @@
         <h1>String</h1>
       </section>
     </article>
+
+    <script>
+      function namePushButton() {
+        //alert("Er is over de knop gehoverd");
+        // Haal de waarde op uit het input-tag
+        var inputTekst = document.getElementById("inputName");
+        //console.log(inputTekst.value);
+
+        // Zet een handvat op het p-tag
+        var p_tag = document.getElementById("outputPara");
+        // Verander de tekst in het p-tag met innerHTML
+        p_tag.innerHTML = "Mijn naam is: " + inputTekst.value;
+      }
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
