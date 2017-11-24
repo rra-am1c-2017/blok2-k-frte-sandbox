@@ -152,7 +152,7 @@
           </div>
           <script>
             function verander_de_tekst() {
-              //alert("Dit is een alert in een functie");
+              alert("Dit is een alert in een functie");
               var p_tag = document.getElementById("verander_tekst");
               p_tag.innerHTML = "Dit is de veranderde tekst. Hij is verandert door het drukken op de knop";
             }          
@@ -175,6 +175,34 @@
       </section>
       <section id="js02">
         <h1>Comments</h1>
+        <div class=row>
+          <div class="col-6">
+            <p>De eerste manier om in javascript code uit te commentarieren is per regel. Je zet dan voor de coderegel die je wilt uitcommentarieren twee forwardslashes // De browser negeert dan deze code. In Visual studio code wordt je code groen.</p>
+          </div>
+          <div class="col-6">
+              De tweede manier om in javascript code uit te commentarieren is per codeblock. Je zet voor het codeblock een een forwardslash en een asterisk /* en aan het einde van het codeblock een asterisk en een forwardslash */. De browser negeert dan deze code. In Visual studio code wordt je code groen.
+          </div>
+
+          <!-- <div class="row">
+            <div class="col-6">
+              <img src="./images/comments/comment_forward_slash.png" alt="forward slash comment" class="img-fluid rounded">
+            </div>
+            <div class="col-6">
+              <img src="./images/comments/comment_forward_slash_asterisk.png" alt="forward slash comment" class="img-fluid rounded">
+            </div>
+          </div> -->
+
+          <div class="row">
+            <div class="col-6">
+              <p>Let op! HTML commentarieer je uit op een andere manier:<br> 
+              &lt;&excl;&dash;&dash; niet zichtbaar &dash;&dash;&gt; </p>
+            </div>
+            <div class="col-6">
+
+            </div>
+          </div>
+
+        </div>
       </section>
       <section id="js03">
         <h1>String</h1>
@@ -183,15 +211,15 @@
 
     <script>
       function namePushButton() {
-        //alert("Er is over de knop gehoverd");
-        // Haal de waarde op uit het input-tag
-        var inputTekst = document.getElementById("inputName");
-        //console.log(inputTekst.value);
+           alert("Er is over de knop gehoverd");
+           // Haal de waarde op uit het input-tag
+           var inputTekst = document.getElementById("inputName");
+           // console.log(inputTekst.value);
 
-        // Zet een handvat op het p-tag
-        var p_tag = document.getElementById("outputPara");
-        // Verander de tekst in het p-tag met innerHTML
-        p_tag.innerHTML = "Mijn naam is: " + inputTekst.value;
+           // Zet een handvat op het p-tag
+           var p_tag = document.getElementById("outputPara");
+           // Verander de tekst in het p-tag met innerHTML
+           p_tag.innerHTML = "Mijn naam is: " + inputTekst.value;
       }
     </script>
 
