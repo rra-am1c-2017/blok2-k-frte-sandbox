@@ -40,7 +40,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="#js01">Output</a>
                   <a class="dropdown-item" href="#js02">Comments</a>
-                  <a class="dropdown-item" href="#js03">String</a>
+                  <a class="dropdown-item" href="#js03">Arrays</a>
                 </div>
               </li>
           </ul>
@@ -205,28 +205,38 @@
         </div>
       </section>
       <section id="js03">
-        <h1>String</h1>
+        <h1>Arrays</h1>
+        <!-- Twee manieren om een array weer te geven in de browser -->
+        <div class="row">
+          <div class="col-6">
+            <p>Je kunt in javascript een array maken op de volgende manier:</p>
+            <p>var fruit = ["appel", "peer", "meloen"]</p>
+            <button class="btn btn-primary" onclick="show_array();">Laat het array zien!</button>
+            <button class="btn btn-danger" onclick="show_array_ol();">Laat het array zien in een ol!</button>
+          </div>
+          <div class="col-6">
+            <p id="arrayTest"></p>
+            <p id="arrayTestOl"></p>
+          </div>
+        </div>
+
+        <!-- Het toevoegen van een element aan het array -->
+        <div class="row">
+          <div class="col-6">
+
+          </div>
+          <div class="col-6">
+            
+          </div>
+        </div>
       </section>
     </article>
-
-    <script>
-      function namePushButton() {
-           alert("Er is over het knopje gehoverd");
-           // Haal de waarde op uit het input-tag
-           var inputTekst = document.getElementById("inputName");
-           // console.log(inputTekst.value);
-
-           // Zet een handvat op het p-tag
-           var p_tag = document.getElementById("outputPara");
-           // Verander de tekst in het p-tag met innerHTML
-           p_tag.innerHTML = "Mijn naam is: " + inputTekst.value;
-      }
-    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="./js/sandbox.js"></script>
   </body>
 </html>
