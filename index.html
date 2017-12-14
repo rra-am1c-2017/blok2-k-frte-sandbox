@@ -223,10 +223,16 @@
         <!-- Het toevoegen van een element aan het array -->
         <div class="row">
           <div class="col-6">
-
+            <p>Met de button en tekstvak hieronder kun je elementen toevoegen aan het einde van het array</p>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Voeg toe aan einde array" aria-label="Search for..." id="inputAddEnd">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button" onclick="add_array_end();">Voeg toe!</button>
+              </span>
+            </div>
           </div>
           <div class="col-6">
-            
+            <p id="arrayAdd"></p>
           </div>
         </div>
       </section>
